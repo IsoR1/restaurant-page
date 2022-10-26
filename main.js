@@ -1,0 +1,1 @@
+(()=>{"use strict";!function(){const t=document.createElement("img"),e=document.getElementById("content");t.src="https://cdna.artstation.com/p/assets/images/images/011/503/172/large/greg-bobrowski-gt-k0234-d5519-22340-theinnatthecrossrox-grzegorzbobrowski.jpg?1529930412",e.appendChild(t),console.log("test")}()})();

@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#content {
+    /* background: url("https://assets.vogue.com/photos/597798a7e4c51840ce92ad70/master/w_1600%2Cc_limit/01-a-guide-to-the-best-restaurants-in-amalfi-italy.jpg");
+    /* background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100%;
+    width: 100%; */
+
+    /* background: url("https://static.wikia.nocookie.net/gameofthrones/images/f/fa/Inn_at_the_Crossroads.jpg/revision/latest/scale-to-width-down/1200?cb=20110302122536");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100%;
+    width: 100%; */
+
+
+}
+
+/* .bg-div { */
+img {
+
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    opacity: 0.5;
+
+
+    /* background: url('https://assets.vogue.com/photos/597798a7e4c51840ce92ad70/master/w_1600%2Cc_limit/01-a-guide-to-the-best-restaurants-in-amalfi-italy.jpg');
+    background-repeat: no-repeat;
+    background-size: auto; */
+/* 
+    background: url("https://images.unsplash.com/photo-1561344640-2453889cde5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 40%; */
+    /* height: 100%;
+    width: 40%;
+    background-color: red; */
+}
+
+
