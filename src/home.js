@@ -6,7 +6,19 @@ function createImage() {
     content.appendChild(image);
 }
 
+// function headerDiv() {
+//     const div = document.createElement("div");
+//     div.classList.add("header-div");
+// }
+
+const headerDiv = () => {
+        const div = document.createElement("div");
+        div.classList.add("header-div");
+        return div;
+}
+
 function headerList() {
+    const hDiv = headerDiv();
     const ul = document.createElement("ul");
     
     const liOne = document.createElement("li")
@@ -20,7 +32,8 @@ function headerList() {
     liThree.innerHTML = 'Contact';
 
     ul.append(liOne, liTwo, liThree);
-    content.append(ul)
+    hDiv.append(ul)
+    content.append(hDiv)
 }
 
 export { createImage, headerList }
