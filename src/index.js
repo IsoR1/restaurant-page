@@ -1,3 +1,4 @@
-import { createImage } from './home'
+import { createImage, headerList } from './home'
 
-createImage()
+createImage();
+headerList();
