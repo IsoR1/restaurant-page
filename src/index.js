@@ -1,4 +1,5 @@
-import { createImage, headerList } from './home'
+import  header from './header'
+import { createHomeTab } from './home'
 
-createImage();
-headerList();
+header();
+createHomeTab();

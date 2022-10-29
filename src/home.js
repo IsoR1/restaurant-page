@@ -1,39 +1,55 @@
-const content = document.getElementById("content");
+   const home = function() {}
+   const content = document.getElementById("content");
 
-function createImage() {
-    const image = document.createElement("img");
-    image.src = "https://cdna.artstation.com/p/assets/images/images/011/503/172/large/greg-bobrowski-gt-k0234-d5519-22340-theinnatthecrossrox-grzegorzbobrowski.jpg?1529930412";
-    content.appendChild(image);
-}
+    function createImage() {
+        const image = document.createElement("img");
+        image.classList.add("bg-img");
+        image.src = "../dist/assets/inn.jpg";
+        content.appendChild(image);
+    }
 
-// function headerDiv() {
-//     const div = document.createElement("div");
-//     div.classList.add("header-div");
-// }
-
-const headerDiv = () => {
+    const bodyDiv = () => {
         const div = document.createElement("div");
-        div.classList.add("header-div");
+        div.classList.add('body-div');
+        
+        content.append(div);
         return div;
-}
+    }
 
-function headerList() {
-    const hDiv = headerDiv();
-    const ul = document.createElement("ul");
-    
-    const liOne = document.createElement("li")
-    const liTwo = document.createElement("li")
-    const liThree = document.createElement("li")
+    const createCenterDiv = () => {
+        const bodyHomePageDiv = bodyDiv()
+        
+        const div = document.createElement("div");
+        div.classList.add("body-center-div");
+        bodyHomePageDiv.append(div);
 
-    liOne.innerHTML = "Home";
+        return div
+    }
 
-    liTwo.innerHTML = "Menu";
+    const createBodyPhotoDiv = () => {
+        const bodyCenterDiv = createCenterDiv();
+        const div = document.createElement("div");
+        div.classList.add('photo-body-div');
+        
+        bodyCenterDiv.append(div);
+        return div;
+    }
 
-    liThree.innerHTML = 'Contact';
+    function createBodyPhoto() {
+        const photoDiv = createBodyPhotoDiv();
 
-    ul.append(liOne, liTwo, liThree);
-    hDiv.append(ul)
-    content.append(hDiv)
-}
+        const image = document.createElement("img");
+        image.classList.add("body-home-image");
+        image.src = "../dist/assets/hotpie.jpg";
+        photoDiv.appendChild(image);
+    }
 
-export { createImage, headerList }
+
+
+    function createHomeTab() {
+        createImage();
+        // headerList();
+        createBodyPhoto();
+    }
+
+export { createHomeTab }
