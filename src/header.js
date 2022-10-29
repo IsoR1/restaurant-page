@@ -1,6 +1,5 @@
 const header = function() {
     const content = document.getElementById("content");
-    console.log("s")
     const headerDiv = () => {
         const div = document.createElement("div");
         div.classList.add("header-div");
