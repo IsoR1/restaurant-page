@@ -141,7 +141,7 @@ ul {
 .item-card {
     height: 25%;
     width: 40%;
-    background-color: #8f9fa16c;
+    background-color: #8f9fa19f;
 }
 
 .item-image {
@@ -153,6 +153,8 @@ ul {
     width: 100%;
     padding-bottom: 7px;
     margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #ded080;
 }
 
 
@@ -199,7 +201,7 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: #7b8344;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50% 100%;
