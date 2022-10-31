@@ -11,6 +11,8 @@ body {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 50px;
 }
 
 .bg-img {
@@ -30,6 +32,10 @@ body {
 .header-div {
     background-color: #29323869;
     height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 ul {
@@ -38,6 +44,8 @@ ul {
     align-items: center;
     height: 100%;
     flex-direction: row;
+    width: 30%;
+    gap: 40px;
 }
 
 .header-li {
@@ -74,8 +82,8 @@ ul {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 80%;
     width: 40%;
+    height: 40%;
     background-color: #293238be;
 }
 
@@ -114,3 +122,102 @@ ul {
 .hidden {
     display: none;
 }
+
+
+/* menu */
+
+.menu-div {
+    background-color: #293238be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-grow: 1; */
+    height: 60%;
+    width: 40%;
+    gap: 20px;
+}
+
+.item-card {
+    height: 25%;
+    width: 40%;
+    background-color: #8f9fa16c;
+}
+
+.item-image {
+    height: 80%;
+    width: 100%;
+}
+
+.card-text {
+    width: 100%;
+    padding-bottom: 7px;
+    margin-bottom: 20px;
+}
+
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+.hvr-bounce-to-top {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .hvr-bounce-to-top:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-bounce-to-top:hover, .hvr-bounce-to-top:focus, .hvr-bounce-to-top:active {
+    color: white;
+  }
+  .hvr-bounce-to-top:hover:before, .hvr-bounce-to-top:focus:before, .hvr-bounce-to-top:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
+  
