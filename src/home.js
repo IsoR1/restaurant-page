@@ -78,14 +78,15 @@
     function createHomeTab() {
         createImage();
         
-        const bodyHomePageDiv = bodyDiv()
+        // const bodyHomePageDiv = bodyDiv()
         const bodyCenterDiv = createCenterDiv();
         const text = createText();
         const photoDiv = createBodyPhotoDiv();
         const createPhoto = createBodyPhoto();
         const cta = createCallToAction();
 
-        bodyHomePageDiv.append(bodyCenterDiv);
+        content.append(bodyCenterDiv)
+        // bodyHomePageDiv.append(bodyCenterDiv);
         bodyCenterDiv.append(text);
         photoDiv.append(createPhoto);
         bodyCenterDiv.append(photoDiv);
