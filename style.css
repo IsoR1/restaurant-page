@@ -132,7 +132,6 @@ ul {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* flex-grow: 1; */
     height: 60%;
     width: 40%;
     gap: 20px;
@@ -158,6 +157,39 @@ ul {
 }
 
 
+/* contact */
+
+.contact-main {
+    background-color: #293238be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    flex-direction: column;
+}
+
+.person-img {
+    height: 180px;
+    width: 150px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.contact-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.person-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* effects */
+
 .hvr-grow {
     display: inline-block;
     vertical-align: middle;
@@ -174,12 +206,6 @@ ul {
 .hvr-grow:active {
     transform: scale(1.1);
 }
-
-
-
-
-
-
 
 .hvr-bounce-to-top {
     display: inline-block;
