@@ -35,7 +35,7 @@ const menu = function() {
         const itemCardOne = item('../dist/assets/chicken.jpg', 'Honeyed Chicken');
         const itemCardTwo = item('../dist/assets/stew.jpg', 'Beef & Barley Stew');
         const itemCardThree = item('../dist/assets/wolfbread.jpg', 'Wolf Bread');
-        const itemCardFour = item('../dist/assets/lemoncake.jpg', 'Lemon Cake');
+        const itemCardFour = item('../dist/assets/lemoncake.jpg', 'Lemon Cakes');
         const itemCardFive = item('../dist/assets/creamcake.jpg', 'Dornish Cream Cakes');
         const itemCardSix = item('../dist/assets/plumwine.jpg', 'Sweet Plum Wine');
 
