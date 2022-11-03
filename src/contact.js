@@ -1,37 +1,37 @@
-const contact = function() {
+const staff = function() {
     const content = document.getElementById("content");
     
-    const contactDiv = () => {
+    const staffDiv = () => {
       const div = document.createElement("div");
-      div.classList.add("contact-main");
+      div.classList.add("staff-main");
       
       return div
     }
 
     const mainTop = () => {
       const div = document.createElement("div");
-      div.classList.add("contact-top");
+      div.classList.add("staff-top");
 
       const topText = document.createElement("p");
-      topText.textContent = 'Contact Us';
+      topText.textContent = 'Our Staff';
       
       div.append(topText)
       return div
     }
 
-    const contactUsText = () => {
+    const ourStaffText = () => {
       const p = document.createElement("div");
-      p.classList.add("contact-us");
-      p.textContent = 'Contact Us'
+      p.classList.add("our-staff");
+      p.textContent = 'Our Staff'
 
 
 
       return p;
     }
 
-    const person = (imgSrc, firstName, title) => {
+    const person = (imgSrc, firstName, title, location) => {
       const div = document.createElement("div");
-      div.classList.add("contact-card");
+      div.classList.add("staff-card");
 
       const image = document.createElement("img");
       image.src = imgSrc;
@@ -48,34 +48,39 @@ const contact = function() {
       pos.classList.add("position");
       pos.textContent = title;
 
+      const loc = document.createElement("p");
+      loc.classList.add("location");
+      loc.textContent = location;
+
       textDiv.append(name);
-      textDiv.append(pos)
+      textDiv.append(pos);
+      textDiv.append(loc);
       div.append(textDiv)
       div.append(image);
 
       return div;
     }
 
-    function createContact() {
-        const conDiv = contactDiv();
+    function createStaff() {
+        const conDiv = staffDiv();
         content.append(conDiv);
 
-        const contactUs = mainTop();
-        const contactText = contactUsText();
+        const ourStaff = mainTop();
+        const staffText = ourStaff();
 
-        const owner = person("../dist/assets/owner.jpg", 'Hot Pie', 'Owner')
-        const manager = person("../dist/assets/manager.jpg", 'Arya', 'Manager')
-        const waiter = person("../dist/assets/waiter.png", 'Gendry ?', 'Waiter')
+        const owner = person("../dist/assets/owner.jpg", 'Hot Pie', 'Owner', 'The Crossroads')
+        const manager = person("../dist/assets/manager.jpg", 'Arya', 'Manager', 'Winterfell / The Crossroads')
+        const waiter = person("../dist/assets/waiter.png", 'Gendry ?', 'Waiter', 'Flea Bottom / The Crossroads')
     
-        conDiv.append(contactText);
+        conDiv.append(staffText);
         conDiv.append(owner);
         conDiv.append(manager);
         conDiv.append(waiter);
       }
 
-    createContact();
+    createStaff();
 
-    return contact
+    return staff
 }
 
-export default contact;
+export default staff;

@@ -66,15 +66,7 @@ ul {
 
 /* main */
 
-/* .body-div {
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-family: 'Cinzel', serif;
-} */
-
-.body-home-image {
+.main-img {
     width: 30%;
     display: flex;
     justify-content: center;
@@ -83,7 +75,7 @@ ul {
     margin-top: 30px;;
 }
 
-.body-center-div {
+.main-body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +85,7 @@ ul {
     background-color: #293238be;
 }
 
-.photo-body-div {
+.img-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,9 +155,9 @@ ul {
 }
 
 
-/* contact */
+/* staff */
 
-.contact-main {
+.staff-main {
     background-color: #293238be;
     display: flex;
     justify-content: center;
@@ -173,9 +165,10 @@ ul {
     width: 40%;
     height: 70%;
     flex-direction: column;
+    padding-bottom: 30px;
 }
 
-.contact-us {
+.our-staff {
     font-size: 1.8rem;
     color: #bfd7e7;
 }
@@ -188,7 +181,7 @@ ul {
     align-self: flex-end
 }
 
-.contact-card {
+.staff-card {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -213,6 +206,10 @@ ul {
     color: #f7f7f7bd;
 }
 
+.location {
+    font-size: 1rem;
+    color: #f7f7f773;
+}
 
 
 /* effects */

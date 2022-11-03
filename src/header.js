@@ -33,7 +33,7 @@ const header = function() {
 
         liOne.innerHTML = "Home";
         liTwo.innerHTML = "Menu";
-        liThree.innerHTML = 'Contact';
+        liThree.innerHTML = 'Staff';
 
         headDiv.append(headText)
         

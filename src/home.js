@@ -12,7 +12,7 @@
     const bodyDiv = () => {
         // const bodyHomePageDiv = bodyDiv()
         const div = document.createElement("div");
-        div.classList.add('body-div');
+        div.classList.add('main-body');
         
         content.append(div);
         return div;
@@ -21,7 +21,7 @@
     const createCenterDiv = () => {
         
         const div = document.createElement("div");
-        div.classList.add("body-center-div");
+        div.classList.add("main-body");
         // bodyHomePageDiv.append(div);
 
         return div
@@ -30,7 +30,7 @@
     const createBodyPhotoDiv = () => {
         // const bodyCenterDiv = createCenterDiv();
         const div = document.createElement("div");
-        div.classList.add('photo-body-div');
+        div.classList.add('img-container');
         
         // bodyCenterDiv.append(div);
         return div;
@@ -40,7 +40,7 @@
         // const photoDiv = createBodyPhotoDiv();
 
         const image = document.createElement("img");
-        image.classList.add("body-home-image");
+        image.classList.add("main-img");
         image.src = "../dist/assets/hotpie.jpg";
         // photoDiv.appendChild(image);
         return image
