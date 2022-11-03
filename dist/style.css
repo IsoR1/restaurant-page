@@ -4,6 +4,7 @@
 }
 
 body {
+    font-family: 'Cinzel', serif;
 }
 
 #content {
@@ -36,14 +37,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 30px;
 }
 
 ul {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-    flex-direction: row;
     width: 30%;
     gap: 40px;
 }
@@ -59,14 +59,20 @@ ul {
     cursor: pointer;
 }
 
+.header-text-content {
+    font-size: 1.8rem;
+    color: #b3c8d7
+}
+
 /* main */
 
-.body-div {
+/* .body-div {
     height: 70%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-}
+    font-family: 'Cinzel', serif;
+} */
 
 .body-home-image {
     width: 30%;
@@ -165,7 +171,13 @@ ul {
     justify-content: center;
     align-items: center;
     width: 40%;
+    height: 70%;
     flex-direction: column;
+}
+
+.contact-us {
+    font-size: 1.8rem;
+    color: #bfd7e7;
 }
 
 .person-img {
@@ -173,12 +185,14 @@ ul {
     width: 150px;
     border-radius: 50px;
     object-fit: cover;
+    align-self: flex-end
 }
 
 .contact-card {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    height: 80%;
 }
 
 .person-text {
@@ -186,7 +200,20 @@ ul {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 15px;
 }
+
+.person-name {
+    font-size: 1.4rem;
+    color: #b3c8d7;
+}
+
+.position {
+    font-size: 1.2rem;
+    color: #f7f7f7bd;
+}
+
+
 
 /* effects */
 

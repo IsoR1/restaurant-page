@@ -8,6 +8,27 @@ const contact = function() {
       return div
     }
 
+    const mainTop = () => {
+      const div = document.createElement("div");
+      div.classList.add("contact-top");
+
+      const topText = document.createElement("p");
+      topText.textContent = 'Contact Us';
+      
+      div.append(topText)
+      return div
+    }
+
+    const contactUsText = () => {
+      const p = document.createElement("div");
+      p.classList.add("contact-us");
+      p.textContent = 'Contact Us'
+
+
+
+      return p;
+    }
+
     const person = (imgSrc, firstName, title) => {
       const div = document.createElement("div");
       div.classList.add("contact-card");
@@ -29,8 +50,6 @@ const contact = function() {
 
       textDiv.append(name);
       textDiv.append(pos)
-      // div.append(name);
-      // div.append(pos)
       div.append(textDiv)
       div.append(image);
 
@@ -41,13 +60,17 @@ const contact = function() {
         const conDiv = contactDiv();
         content.append(conDiv);
 
+        const contactUs = mainTop();
+        const contactText = contactUsText();
+
         const owner = person("../dist/assets/owner.jpg", 'Hot Pie', 'Owner')
         const manager = person("../dist/assets/manager.jpg", 'Arya', 'Manager')
         const waiter = person("../dist/assets/waiter.png", 'Gendry ?', 'Waiter')
     
-        conDiv.append(owner)
-        conDiv.append(manager)
-        conDiv.append(waiter)
+        conDiv.append(contactText);
+        conDiv.append(owner);
+        conDiv.append(manager);
+        conDiv.append(waiter);
       }
 
     createContact();

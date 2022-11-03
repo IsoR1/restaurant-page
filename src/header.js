@@ -1,13 +1,27 @@
 const header = function() {
     const content = document.getElementById("content");
+
     const headerDiv = () => {
         const div = document.createElement("div");
         div.classList.add("header-div");
         return div;
     }
 
+    const headerText = () => {
+        const div = document.createElement("div");
+        div.classList.add("header-text");
+
+        const text = document.createElement("p");
+        text.classList.add("header-text-content");
+        text.textContent = 'The Inn at the Crossroads';
+
+        div.append(text);
+        return div;
+    }
+
     function headerList() {
         const headDiv = headerDiv();
+        const headText = headerText();
         const ul = document.createElement("ul");
 
         const liOne = document.createElement("li")
@@ -21,6 +35,8 @@ const header = function() {
         liTwo.innerHTML = "Menu";
         liThree.innerHTML = 'Contact';
 
+        headDiv.append(headText)
+        
         ul.append(liOne, liTwo, liThree);
         headDiv.append(ul)
         content.append(headDiv)
