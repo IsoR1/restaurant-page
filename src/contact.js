@@ -68,9 +68,9 @@ const staff = function() {
         const ourStaff = mainTop();
         const staffText = ourStaff();
 
-        const owner = person("../dist/assets/owner.jpg", 'Hot Pie', 'Owner', 'The Crossroads')
-        const manager = person("../dist/assets/manager.jpg", 'Arya', 'Manager', 'Winterfell / The Crossroads')
-        const waiter = person("../dist/assets/waiter.png", 'Gendry ?', 'Waiter', 'Flea Bottom / The Crossroads')
+        const owner = person("assets/owner.jpg", 'Hot Pie', 'Owner', 'The Crossroads')
+        const manager = person("assets/manager.jpg", 'Arya', 'Manager', 'Winterfell / The Crossroads')
+        const waiter = person("assets/waiter.png", 'Gendry ?', 'Waiter', 'Flea Bottom / The Crossroads')
     
         conDiv.append(staffText);
         conDiv.append(owner);

@@ -3,7 +3,6 @@ const staff = function() {
   
   const staffDiv = () => {
     const div = document.createElement("div");
-    // div.setAttribute("id", "staff-main");
     div.classList.add("staff-main", "hidden");
     
     return div
@@ -64,9 +63,9 @@ const staff = function() {
       const ourStaff = mainTop();
       const staffText = ourStaffText();
 
-      const owner = person("../dist/assets/owner.jpg", 'Hot Pie', 'Owner')
-      const manager = person("../dist/assets/manager.jpg", 'Arya Stark', 'Manager')
-      const waiter = person("../dist/assets/waiter.png", 'Gendry ?', 'Waiter')
+      const owner = person("assets/owner.jpg", 'Hot Pie', 'Owner')
+      const manager = person("assets/manager.jpg", 'Arya Stark', 'Manager')
+      const waiter = person("assets/waiter.png", 'Gendry ?', 'Waiter')
   
       conDiv.append(staffText);
       conDiv.append(owner);

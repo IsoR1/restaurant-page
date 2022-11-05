@@ -3,7 +3,6 @@ const menu = function() {
 
     const menuDiv = () => {
         const div = document.createElement("div");
-        // div.setAttribute("id", "menu-div")
         div.classList.add("menu-div", "hidden");
         return div;
     }
@@ -33,12 +32,12 @@ const menu = function() {
 
     function createMenu() {
         const mainDiv = menuDiv();
-        const itemCardOne = item('../dist/assets/chicken.jpg', 'Honeyed Chicken');
-        const itemCardTwo = item('../dist/assets/stew.jpg', 'Beef & Barley Stew');
-        const itemCardThree = item('../dist/assets/wolfbread.jpg', 'Wolf Bread');
-        const itemCardFour = item('../dist/assets/lemoncake.jpg', 'Lemon Cakes');
-        const itemCardFive = item('../dist/assets/creamcake.jpg', 'Dornish Cream Cakes');
-        const itemCardSix = item('../dist/assets/plumwine.jpg', 'Sweet Plum Wine'); 
+        const itemCardOne = item('assets/chicken.jpg', 'Honeyed Chicken');
+        const itemCardTwo = item('assets/stew.jpg', 'Beef & Barley Stew');
+        const itemCardThree = item('assets/wolfbread.jpg', 'Wolf Bread');
+        const itemCardFour = item('assets/lemoncake.jpg', 'Lemon Cakes');
+        const itemCardFive = item('assets/creamcake.jpg', 'Dornish Cream Cakes');
+        const itemCardSix = item('assets/plumwine.jpg', 'Sweet Plum Wine'); 
 
         content.append(mainDiv);
         mainDiv.append(itemCardOne);

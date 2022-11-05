@@ -5,34 +5,29 @@
     function createImage() {
         const image = document.createElement("img");
         image.classList.add("bg-img");
-        image.src = "../dist/assets/inn.jpg";
+        image.src = "assets/inn.jpg";
         content.appendChild(image);
     }
 
     const createCenterDiv = () => {
         const div = document.createElement("div");
-        // div.setAttribute('id', 'main-body');
         div.classList.add('main-body');
 
         return div
     }
 
     const createBodyPhotoDiv = () => {
-        // const bodyCenterDiv = createCenterDiv();
         const div = document.createElement("div");
         div.classList.add('img-container');
         
-        // bodyCenterDiv.append(div);
+        
         return div;
     }
 
     const createBodyPhoto = () => {
-        // const photoDiv = createBodyPhotoDiv();
-
         const image = document.createElement("img");
         image.classList.add("main-img");
-        image.src = "../dist/assets/hotpie.jpg";
-        // photoDiv.appendChild(image);
+        image.src = "assets/hotpie.jpg";
         return image
     }
 
@@ -44,7 +39,7 @@
         textDiv.classList.add("text");
 
         pOne.textContent = 'The Best Lemon Cakes in Westeros';
-        pTwo.textContent = 'Made with love since the reign of Jaehaerys I';
+        pTwo.textContent = 'Serving you every morrow since the reign of Jaehaerys I';
 
         textDiv.append(pOne);
         textDiv.append(pTwo);

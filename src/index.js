@@ -1,8 +1,8 @@
-import header from './header';
-import home from './home';
-import menu from './menu';
-import staff from './staff';
-import footer from './footer';
+import header from 'header.js';
+import home from 'home.js';
+import menu from 'menu.js';
+import staff from 'staff.js';
+import footer from 'footer.js';
 
 header();
 home();
