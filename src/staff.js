@@ -65,7 +65,7 @@ const staff = function() {
       const staffText = ourStaffText();
 
       const owner = person("../dist/assets/owner.jpg", 'Hot Pie', 'Owner')
-      const manager = person("../dist/assets/manager.jpg", 'Arya', 'Manager')
+      const manager = person("../dist/assets/manager.jpg", 'Arya Stark', 'Manager')
       const waiter = person("../dist/assets/waiter.png", 'Gendry ?', 'Waiter')
   
       conDiv.append(staffText);
