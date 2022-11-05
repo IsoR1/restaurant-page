@@ -24,12 +24,12 @@ const header = function() {
         const headText = headerText();
         const ul = document.createElement("ul");
 
-        const liOne = document.createElement("li")
-        liOne.classList.add("header-li")
-        const liTwo = document.createElement("li")
-        liTwo.classList.add("header-li")
-        const liThree = document.createElement("li")
-        liThree.classList.add("header-li")
+        const liOne = document.createElement("li");
+        liOne.classList.add("header-li", 'home-li');
+        const liTwo = document.createElement("li");
+        liTwo.classList.add("header-li", "menu-li");
+        const liThree = document.createElement("li");
+        liThree.classList.add("header-li", "staff-li");
 
         liOne.innerHTML = "Home";
         liTwo.innerHTML = "Menu";

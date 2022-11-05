@@ -3,7 +3,8 @@ const menu = function() {
 
     const menuDiv = () => {
         const div = document.createElement("div");
-        div.classList.add("menu-div");
+        // div.setAttribute("id", "menu-div")
+        div.classList.add("menu-div", "hidden");
         return div;
     }
 
@@ -37,7 +38,7 @@ const menu = function() {
         const itemCardThree = item('../dist/assets/wolfbread.jpg', 'Wolf Bread');
         const itemCardFour = item('../dist/assets/lemoncake.jpg', 'Lemon Cakes');
         const itemCardFive = item('../dist/assets/creamcake.jpg', 'Dornish Cream Cakes');
-        const itemCardSix = item('../dist/assets/plumwine.jpg', 'Sweet Plum Wine');
+        const itemCardSix = item('../dist/assets/plumwine.jpg', 'Sweet Plum Wine'); 
 
         content.append(mainDiv);
         mainDiv.append(itemCardOne);

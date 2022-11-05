@@ -2,5 +2,7 @@
 
 Credit:
 
-Inn at the Crossroads - Greg Bobrowski
+Inn at the Crossroads image - Greg Bobrowski
 https://gregbobrowski.com/
+
+Menu images - https://www.innatthecrossroads.com/

@@ -9,20 +9,10 @@
         content.appendChild(image);
     }
 
-    const bodyDiv = () => {
-        // const bodyHomePageDiv = bodyDiv()
-        const div = document.createElement("div");
-        div.classList.add('main-body');
-        
-        content.append(div);
-        return div;
-    }
-
     const createCenterDiv = () => {
-        
         const div = document.createElement("div");
-        div.classList.add("main-body");
-        // bodyHomePageDiv.append(div);
+        // div.setAttribute('id', 'main-body');
+        div.classList.add('main-body');
 
         return div
     }
@@ -78,7 +68,6 @@
     function createHomeTab() {
         createImage();
         
-        // const bodyHomePageDiv = bodyDiv()
         const bodyCenterDiv = createCenterDiv();
         const text = createText();
         const photoDiv = createBodyPhotoDiv();
@@ -86,7 +75,6 @@
         const cta = createCallToAction();
 
         content.append(bodyCenterDiv)
-        // bodyHomePageDiv.append(bodyCenterDiv);
         bodyCenterDiv.append(text);
         photoDiv.append(createPhoto);
         bodyCenterDiv.append(photoDiv);

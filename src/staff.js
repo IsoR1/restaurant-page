@@ -3,7 +3,8 @@ const staff = function() {
   
   const staffDiv = () => {
     const div = document.createElement("div");
-    div.classList.add("staff-main");
+    // div.setAttribute("id", "staff-main");
+    div.classList.add("staff-main", "hidden");
     
     return div
   }
@@ -29,7 +30,7 @@ const staff = function() {
     return p;
   }
 
-  const person = (imgSrc, firstName, title, location) => {
+  const person = (imgSrc, firstName, title) => {
     const div = document.createElement("div");
     div.classList.add("staff-card");
 
