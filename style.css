@@ -5,10 +5,11 @@
 
 body {
     font-family: 'Cinzel', serif;
+    overflow-x: hidden;
 }
 
 #content {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -28,11 +29,24 @@ body {
 
 }
 
+.main-body.hidden,
+.menu-div.hidden,
+.staff-main.hidden {
+    display: none;
+}
+
+.home-li.underline,
+.menu-li.underline,
+.staff-li.underline {
+    border-bottom: 2px solid #ded080;;
+}
+
+
 /* header */
 
 .header-div {
     background-color: #29323869;
-    height: 20%;
+    height: 200px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -81,8 +95,8 @@ ul {
     align-items: center;
     flex-direction: column;
     width: 40%;
-    height: 40%;
     background-color: #293238be;
+    padding-bottom: 20px;
 }
 
 .img-container {
@@ -117,28 +131,23 @@ ul {
     color: #bfd7e7;
 }
 
-.hidden {
-    display: none;
-}
-
 
 /* menu */
 
 .menu-div {
     background-color: #293238be;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 60%;
     width: 40%;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
 }
 
 .item-card {
-    height: 25%;
-    width: 40%;
+    height: 60%;
+    width: 50%;
     background-color: #8f9fa19f;
+    cursor: pointer;
 }
 
 .item-image {
@@ -148,9 +157,6 @@ ul {
 
 .card-text {
     width: 100%;
-    padding-bottom: 7px;
-    margin-bottom: 20px;
-    font-size: 1.1rem;
     color: #ded080;
 }
 
@@ -162,10 +168,11 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 20px;
     width: 40%;
     height: 70%;
-    flex-direction: column;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .our-staff {
@@ -210,6 +217,20 @@ ul {
     font-size: 1rem;
     color: #f7f7f773;
 }
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    color: #b3c8d7;
+    background-color: #29323869;
+    height: 70px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
 
 
 /* effects */
